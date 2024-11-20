@@ -4,12 +4,12 @@ import { useCurrentChain } from '@/hooks/useChains'
 import useWallet from '@/hooks/wallets/useWallet'
 import { Box, Card, Grid, Typography } from '@mui/material'
 import type { ReactElement } from 'react'
-import SafeLogo from '@/public/images/logo-no-text.svg'
+import SafeLogo from '@/public/images/logo.svg'
 
 import css from '@/components/new-safe/create/OverviewWidget/styles.module.css'
 import ConnectWalletButton from '@/components/common/ConnectWallet/ConnectWalletButton'
 
-const LOGO_DIMENSIONS = '22px'
+const LOGO_DIMENSIONS = '100px'
 
 const OverviewWidget = ({ safeName }: { safeName: string }): ReactElement | null => {
   const wallet = useWallet()
