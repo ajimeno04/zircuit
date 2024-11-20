@@ -23,7 +23,7 @@ const COOKIE_AND_TERM_WARNING: Record<CookieAndTermType, string> = {
   [CookieAndTermType.NECESSARY]: '',
   //[CookieAndTermType.UPDATES]: `You attempted to open the "What's new" section but need to accept the "Beamer" cookies first.`,
   [CookieAndTermType.ANALYTICS]: '',
-  [CookieAndTermType.UPDATES]: ''
+  [CookieAndTermType.UPDATES]: '',
 }
 
 const CookieCheckbox = ({
@@ -85,7 +85,7 @@ export const CookieAndTermBanner = ({
       <form>
         <Grid container alignItems="center">
           <Grid item xs>
-          <Typography variant="body2" mb={2}>
+            <Typography variant="body2" mb={2}>
               By browsing this page, you accept our{' '}
               <Link href={AppRoutes.terms}>
                 <u>Terms & Conditions</u>
